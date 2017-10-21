@@ -47,7 +47,7 @@ public class MockRestServerApplication {
     }
 
     public static void main(String[] args){
-        //timer.schedule(periodicTask, 0);
+        timer.schedule(periodicTask, 0);
         SpringApplication.run(MockRestServerApplication.class, args);
     }
 

@@ -1,4 +1,4 @@
-package com.cebbank.bdap.exception;
+package com.spengo.bdap.exception;
 
 /**
  * Created by yilong on 2017/10/18.

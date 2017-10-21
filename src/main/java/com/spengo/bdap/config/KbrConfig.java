@@ -1,4 +1,4 @@
-package com.cebbank.bdap.config;
+package com.spengo.bdap.config;
 
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Component;
 public class KbrConfig {
     private static String jassPath = "/home/mrest/jaas.conf";
     private static String authType = "kerberos";
-    private static String keytabPath = "/home/mrest/http.dn2.keytab";
-    private static String wholePrincipal = "HTTP/bdap-dn-2.cebbank.com@CEBBANK.COM";
-    private static String shortName = "HTTP/bdap-dn-2.cebbank.com";
+    private static String keytabPath = "/home/mrest/http.keytab";
+    private static String wholePrincipal = "HTTP/realms";
+    private static String shortName = "HTTP/realms";
     private static String krb5Path = "/etc/krb5.conf";
 
     public static String getJassPath() {

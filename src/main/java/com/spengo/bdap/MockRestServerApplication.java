@@ -1,11 +1,11 @@
-package com.cebbank.bdap;
+package com.spengo.bdap;
 
 /**
  * Created by yilong on 2017/10/17.
  */
 
-import com.cebbank.bdap.auth.filter.HttpAuthFilter;
-import com.cebbank.bdap.auth.kbr.KbrAuthHandler;
+import com.spengo.bdap.auth.filter.HttpAuthFilter;
+import com.spengo.bdap.auth.kbr.KbrAuthHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

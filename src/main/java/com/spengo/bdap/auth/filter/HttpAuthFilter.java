@@ -1,4 +1,4 @@
-package com.cebbank.bdap.auth.filter;
+package com.spengo.bdap.auth.filter;
 
 /**
  * Created by yilong on 2017/10/19.
@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import com.cebbank.bdap.auth.kbr.KbrAuthHandler;
-import com.cebbank.bdap.exception.RestException;
+import com.spengo.bdap.auth.kbr.KbrAuthHandler;
+import com.spengo.bdap.exception.RestException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.hadoop.security.authentication.client.KerberosAuthenticator;

@@ -1,4 +1,4 @@
-package com.cebbank.bdap.auth.kbr;
+package com.spengo.bdap.auth.kbr;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -38,7 +38,6 @@ public class KbrUtil {
             System.setProperty("java.security.auth.login.config", loginConfPath);
             System.setProperty("java.security.krb5.conf", kr5Path);
             System.setProperty("javax.security.auth.useSubjectCredsOnly", "false");
-            //System.setProperty("java.security.policy", "/Users/yilong/setup/keytab/spring/client/krb5.policy");
 
             LoginContext  loginCOntext = new LoginContext(loginKey);
             loginCOntext.login();

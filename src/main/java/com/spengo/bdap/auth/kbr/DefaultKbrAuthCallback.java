@@ -1,4 +1,4 @@
-package com.cebbank.bdap.auth.kbr;
+package com.spengo.bdap.auth.kbr;
 
 import javax.security.auth.callback.*;
 import java.io.IOException;

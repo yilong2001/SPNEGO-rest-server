@@ -1,6 +1,6 @@
-package com.cebbank.bdap.client;
+package com.spengo.bdap.client;
 
-import com.cebbank.bdap.auth.kbr.KbrUtil;
+import com.spengo.bdap.auth.kbr.KbrUtil;
 import org.apache.commons.codec.binary.Base64;
 import org.ietf.jgss.*;
 import org.slf4j.Logger;
@@ -23,10 +23,10 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
         final KbrUtil kbrUtil = new KbrUtil();
-        final String httpUrl = "http://bdap-dn-2.cebbank.com:9061/testtable/regions";
+        final String httpUrl = "http://ip:port/testtable/regions";
 
-        LoginContext context = kbrUtil.kerbersInit("/Users/yilong/setup/keytab/spring/kbrUtil/bdapjaas.conf",
-                "/Users/yilong/setup/keytab/spring/kbrUtil/krb5.conf",
+        LoginContext context = kbrUtil.kerbersInit("clientjaas.conf",
+                "krb5.conf",
                 "KrbLogin");
 
         byte[] token = Subject.doAs(context.getSubject(), new ClientAction());
@@ -62,7 +62,7 @@ public class Client {
 
                 GSSManager manager = GSSManager.getInstance();
                 GSSName clientName =
-                        manager.createName("bdap_service", GSSName.NT_USER_NAME);
+                        manager.createName("clientPrincipal", GSSName.NT_USER_NAME);
 
                 GSSCredential clientCreds =
                         manager.createCredential(clientName,
@@ -71,7 +71,7 @@ public class Client {
                                 GSSCredential.INITIATE_ONLY);
 
                 GSSName peerName =
-                        manager.createName("HTTP@bdap-dn-2.cebbank.com",
+                        manager.createName("HTTP@realm",
                                 GSSName.NT_HOSTBASED_SERVICE);
 
                 GSSContext secContext =

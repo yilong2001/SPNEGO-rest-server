@@ -1,7 +1,7 @@
-package com.cebbank.bdap.auth.kbr;
+package com.spengo.bdap.auth.kbr;
 
-import com.cebbank.bdap.config.KbrConfig;
-import com.cebbank.bdap.exception.RestException;
+import com.spengo.bdap.config.KbrConfig;
+import com.spengo.bdap.exception.RestException;
 import org.apache.commons.codec.binary.Base64;
 import org.ietf.jgss.*;
 import org.slf4j.Logger;
@@ -24,9 +24,9 @@ import java.security.PrivilegedActionException;
 import java.security.PrivilegedExceptionAction;
 import java.util.*;
 
-import static com.cebbank.bdap.exception.RestException.ERR_CODE_AUTHENTICATION_EXCEPTION;
-import static com.cebbank.bdap.exception.RestException.ERR_CODE_BAD_HEADER;
-import static com.cebbank.bdap.exception.RestException.ERR_CODE_INTERNAL_ERROR;
+import static com.spengo.bdap.exception.RestException.ERR_CODE_AUTHENTICATION_EXCEPTION;
+import static com.spengo.bdap.exception.RestException.ERR_CODE_BAD_HEADER;
+import static com.spengo.bdap.exception.RestException.ERR_CODE_INTERNAL_ERROR;
 
 /**
  * Created by yilong on 2017/4/24.
@@ -171,7 +171,6 @@ public class KbrAuthHandler {
         System.setProperty("java.security.auth.login.config", jaas);
         System.setProperty("java.security.krb5.conf", krb5);
         System.setProperty("javax.security.auth.useSubjectCredsOnly", "false");
-        //System.setProperty("java.security.policy", "/Users/yilong/setup/keytab/spring/client/krb5.policy");
 
         try {
             loginCtx = new LoginContext("HTTPLogin");

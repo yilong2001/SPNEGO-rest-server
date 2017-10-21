@@ -14,5 +14,5 @@ kerberos web server support SPENGO and a client(curl --negotiate )
 *    支持 SPNEGO 的 客户端
 
 ###交流
-mail: yilong2001@126.com
-wx: yilong
+*    mail: yilong2001@126.com
+*    wx: yilong

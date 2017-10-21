@@ -1,7 +1,7 @@
-package com.spengo.bdap.auth.kbr;
+package com.spengo.rest.auth.kbr;
 
-import com.spengo.bdap.config.KbrConfig;
-import com.spengo.bdap.exception.RestException;
+import com.spengo.rest.config.KbrConfig;
+import com.spengo.rest.exception.RestException;
 import org.apache.commons.codec.binary.Base64;
 import org.ietf.jgss.*;
 import org.slf4j.Logger;
@@ -24,9 +24,9 @@ import java.security.PrivilegedActionException;
 import java.security.PrivilegedExceptionAction;
 import java.util.*;
 
-import static com.spengo.bdap.exception.RestException.ERR_CODE_AUTHENTICATION_EXCEPTION;
-import static com.spengo.bdap.exception.RestException.ERR_CODE_BAD_HEADER;
-import static com.spengo.bdap.exception.RestException.ERR_CODE_INTERNAL_ERROR;
+import static com.spengo.rest.exception.RestException.ERR_CODE_AUTHENTICATION_EXCEPTION;
+import static com.spengo.rest.exception.RestException.ERR_CODE_BAD_HEADER;
+import static com.spengo.rest.exception.RestException.ERR_CODE_INTERNAL_ERROR;
 
 /**
  * Created by yilong on 2017/4/24.

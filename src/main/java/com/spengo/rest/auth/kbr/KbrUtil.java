@@ -1,4 +1,4 @@
-package com.spengo.bdap.auth.kbr;
+package com.spengo.rest.auth.kbr;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

@@ -1,4 +1,4 @@
-package com.spengo.bdap.exception;
+package com.spengo.rest.exception;
 
 /**
  * Created by yilong on 2017/10/18.

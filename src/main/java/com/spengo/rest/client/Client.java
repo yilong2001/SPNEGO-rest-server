@@ -1,6 +1,6 @@
-package com.spengo.bdap.client;
+package com.spengo.rest.client;
 
-import com.spengo.bdap.auth.kbr.KbrUtil;
+import com.spengo.rest.auth.kbr.KbrUtil;
 import org.apache.commons.codec.binary.Base64;
 import org.ietf.jgss.*;
 import org.slf4j.Logger;
